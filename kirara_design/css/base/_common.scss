@@ -1,0 +1,81 @@
+@use './config' as *;
+
+h1,
+h2,
+h3,
+h4 {
+	font-weight: bold;
+}
+
+body {
+	margin: 0;
+	font-family: $defaultFont;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+a:hover {
+	filter: contrast(0.9);
+	opacity: 0.8;
+}
+
+$margin-interval: 15px;
+$mbN: 1;
+$mtN: 1;
+
+@mixin margin-bottom($mbN) {
+	margin-bottom: $mbN * $margin-interval;
+
+	@include tab {
+		margin-bottom: $mbN * $margin-interval / 2;
+	}
+
+	;
+}
+
+@while $mbN <=10 {
+	.mb-#{$mbN * 15} {
+		@include margin-bottom($mbN);
+	}
+
+	$mbN: $mbN + 1;
+}
+
+@mixin margin-top($mbN) {
+	margin-top: $mtN * $margin-interval;
+
+	@include tab {
+		margin-top: $mtN * $margin-interval / 2;
+	}
+
+	;
+}
+
+@while $mtN <=10 {
+	.mt-#{$mtN * 15} {
+		@include margin-top($mtN);
+	}
+
+	$mtN: $mtN + 1;
+}
+
+.pc {
+	display: block;
+
+	@include tab {
+		display: none;
+
+	}
+}
+
+.sp {
+	display: none;
+
+	@include tab {
+		display: block;
+
+	}
+}

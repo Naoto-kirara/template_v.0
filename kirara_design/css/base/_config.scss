@@ -1,0 +1,49 @@
+@import 'https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;700&display=swap';
+
+// content width
+$width: 1000px;
+
+// color
+$mainColor: #263770;
+$mainColor_light: #6793D2;
+$mainColor_faint: #F0F4F8;
+$mainColor_dark: #365676;
+$footerColor: #383676;
+$bgColor_lower: #EFF5F7;
+$btn_color: #004BB1;
+
+// font-family
+$defaultFont: "游明朝体",
+  "Yu Mincho",
+  yumincho,
+  "ヒラギノ明朝 Pro",
+  "Hiragino Mincho Pro",
+  "MS P明朝",
+  "MS PMincho",
+  serif;
+$engFont: 'minion-pro',
+  serif;
+$subFont: 'Noto Sans JP', sans-serif;
+
+// break point
+$pc: 1080px;
+$tab: 760px;
+$sp: 425px;
+
+@mixin pc {
+  @media screen and (max-width: ($pc)) {
+    @content;
+  }
+}
+
+@mixin tab {
+  @media screen and (max-width: ($tab)) {
+    @content;
+  }
+}
+
+@mixin sp {
+  @media screen and (max-width: ($sp)) {
+    @content;
+  }
+}

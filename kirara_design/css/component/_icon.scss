@@ -1,0 +1,41 @@
+/* icons */
+.svgIcon {
+    position: relative;
+    display: inline-block;
+    height: auto;
+    vertical-align: baseline;
+    fill: currentcolor;
+
+    &-hidden {
+        position: fixed;
+        bottom: 0;
+        width: 0;
+        visibility: hidden;
+    }
+
+    &-arrow-right svg {
+        width: 15px;
+        rotate: 180deg;
+    }
+
+    &-arrow-left svg {
+        width: 15px;
+    }
+}
+
+.icon {
+    &_pageTitle {
+        position: absolute;
+        top: 50%;
+        left: 5%;
+        z-index: -1;
+        display: block;
+        width: auto;
+        height: auto;
+        transform: translateY(-50%);
+    }
+
+    &_breadcrumb {
+        padding-right: 5px;
+    }
+}

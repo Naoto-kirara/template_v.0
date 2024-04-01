@@ -1,0 +1,4 @@
+/* stylelint-disable scss/load-no-partial-leading-underscore */
+@use 'base/_style' as *;
+@use 'component/_style' as *;
+@use 'page/_style' as *;

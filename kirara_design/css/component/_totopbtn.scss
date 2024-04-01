@@ -1,0 +1,22 @@
+.pagetop {
+  position: fixed;
+  right: 1rem;
+  bottom: 1rem;
+  z-index: 999;
+  display: none;
+  width: 66px;
+  height: auto;
+  aspect-ratio: 1;
+  color: #fff;
+  cursor: pointer;
+  background-color: #263770;
+  border-radius: 50%;
+}
+
+.pagetop svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 23px;
+  transform: translate(-50%, -50%);
+}

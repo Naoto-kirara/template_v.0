@@ -1,0 +1,10 @@
+{
+	"editor.formatOnSave": false, //VSCodeの自動フォーマットを無効化
+	"editor.codeActionsOnSave": {
+		"source.fixAll.stylelint": "explicit"
+	},
+	"stylelint.stylelintPath": "node_modules/stylelint", //stylelintのパス
+	"stylelint.validate": [
+		"scss"
+	] //バリデートするファイルの種類
+}

@@ -1,0 +1,7 @@
+@use './config' as *;
+
+.sectionTitle {
+	z-index: 0;
+	padding-top: 200px;
+	margin-top: -200px;
+}

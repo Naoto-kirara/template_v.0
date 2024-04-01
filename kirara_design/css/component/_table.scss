@@ -1,0 +1,60 @@
+@use '../base/config' as *;
+
+.table {
+  width: 100%;
+
+  @include tab {
+    width: calc(100% - 30px);
+    margin-right: auto;
+   margin-left: auto;
+  }
+
+  table {
+    width: 100%;
+  }
+
+  a {
+    color: blue;
+    text-decoration: underline;
+  }
+
+  th {
+    min-width: 107px;
+    font-weight: normal;
+    color: #365676;
+    vertical-align: middle;
+
+    @include tab {
+      min-width: 80px;
+    }
+  }
+
+  td {
+    position: relative;
+    padding: 25px;
+    line-height: 2;
+
+    @include tab {
+      padding: 12px;
+    }
+  }
+
+  tr {
+    border-top: 1px solid #BEBFBF;
+  }
+
+  tr:last-child {
+    border-bottom: 1px solid #BEBFBF;
+  }
+
+  td::before {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 1px;
+    height: 60%;
+    content: "";
+    background: #BEBFBF;
+    transform: translateY(-50%);
+  }
+}

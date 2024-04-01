@@ -1,0 +1,50 @@
+/*
+Theme Name: FGHD_themes
+Author: kirara_navi_design_works
+Description: original tamplate
+Version: 1.0
+*/
+/* -----------------------------------
+  basic
+----------------------------------- */
+html {
+  margin-top: 0px !important;
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.7rem;
+  color: #000000;
+  background: #ffffff;
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
+  transition: .3s;
+}
+
+b {
+  font-weight: bold;
+}
+
+/* -----------------------------------
+  pc
+----------------------------------- */
+
+
+/* -----------------------------------
+	tablet
+----------------------------------- */
+@media screen and (max-width: 1279px) {
+
+  /* この上に記述 */
+}
+
+/* -----------------------------------
+  sp
+----------------------------------- */
+@media screen and (max-width: 767px) {
+
+  /* この上に記述 */
+}
